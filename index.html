@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+    <div class="card">
+        <div class="top-bar">
+            <input type="text" placeholder="enter city" spellcheck="false" id="search-bar">
+            <button id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        
+        </div>
+        
+        <div class="error-message">
+            <p>Invalid City Name!</p>
+        </div>
+
+        <div class="card-content">
+            <div class="center-content">
+                <img src="mist.png">
+                <h1><span id="temp"></span>°C</h1>
+                <h2><span id="city"></span></h2>
+            </div>
+            <div class="bottom-bar">
+                <div class="humidity">
+                    <img class ="bottom-bar-image" src="humidity.png">
+                    <div class="bottom-text">
+                        <h3><span id="humidity-value"></span>%</h3>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <img class ="bottom-bar-image" src="wind.png">
+                    <div class="bottom-text">
+                        <h3><span id="wind-value"></span>km/h</h3>
+                        <p>Wind Speed</p>
+                    </div>
+                    
+                </div>
+        </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
